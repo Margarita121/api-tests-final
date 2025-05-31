@@ -18,5 +18,5 @@ def buildDockerImage(){
     sh "docker build -t margarita121/api-tests-final:latest ."
 
     echo "Pushing image to docker registry.."
-    sh "docker push margarita121/api-tests-final"
+    sh "docker push margarita121/api-tests-final:latest"
 }
